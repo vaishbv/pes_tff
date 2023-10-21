@@ -2,7 +2,7 @@
 # Contents
 - [T-flip flop](#t-flip-flop)
 - [Iverilog and yosys installation](#iverilog-and-yosys-installation)
-- [GLS Process to verify Ripple Counter](#gls-process-to-verify-ripple-counter)
+- [GLS Process to verify T flip flop ](#gls-process-to-verify-t-flip-flop)
 
 ## T-flip flop
 T Flip-Flop is a single input logic circuit that holds or toggles its output according to the input state. 
@@ -39,7 +39,7 @@ The main purpose of T Flip-Flop is to avoid the occurrence of the intermediate s
 ```
 sudo make install
 ```
-## GLS Process to Verify Ripple Counter
+## GLS Process to Verify T flip flop
 
 First we will look at the waveform simulation of the program 
 ![1 (2)](https://github.com/vaishbv/pes_tff/assets/79531808/c8f8e644-77d8-4e1f-a4eb-825f18f4df7f)
