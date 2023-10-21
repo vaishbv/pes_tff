@@ -94,7 +94,8 @@ write_verilog -noattr pes_tff_netlist.v
 
 - Now using the netlist file, we verify the waveform once more
 
-![10](https://github.com/vaishbv/pes_tff/assets/79531808/79abae33-3d05-4ba4-a827-ccee60e6c750)
+![WhatsApp Image 2023-10-21 at 1 17 37 PM](https://github.com/vaishbv/pes_tff/assets/79531808/3594bcd8-794f-4791-b544-934d04f16c1c)
+
 
 - To read the design and test bench file we must use the command
 ```
@@ -105,7 +106,6 @@ iverilog primitives.v sky130_fd_sc_hd.v pes_tff_netlist.v pes_tff_tb.v
 ```
 gtkwave pes_tff_tb.vcd
 ```
- ![11](https://github.com/vaishbv/pes_tff/assets/79531808/40bfcfdc-4cd0-40e2-948c-baf8d61a2de1)
 
 - The following waveform is generated.
 ![12](https://github.com/vaishbv/pes_tff/assets/79531808/26b1fba5-55d1-4bd5-8153-f0ce25f73eaa)
