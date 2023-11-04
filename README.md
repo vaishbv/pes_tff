@@ -250,7 +250,6 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ```
 run_cts
 ```
-![WhatsApp Image 2023-11-04 at 10 56 15 AM](https://github.com/vaishbv/pes_tff/assets/79531808/41837eee-20c9-423e-afa2-43098bea1e5c)
 
 ![WhatsApp Image 2023-11-04 at 10 57 10 AM](https://github.com/vaishbv/pes_tff/assets/79531808/059f52b2-e801-48c0-9e53-e364ea25421e)
 
@@ -280,6 +279,8 @@ run_cts
 ```
 run_routing
 ```
+
+![WhatsApp Image 2023-11-04 at 10 56 15 AM](https://github.com/vaishbv/pes_tff/assets/79531808/41837eee-20c9-423e-afa2-43098bea1e5c)
 
 - To view the design we type
 ```
