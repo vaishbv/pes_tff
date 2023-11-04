@@ -179,8 +179,29 @@ make test
 ## OpenLANE Flow
 
 - First we create a folder under the name of our design in the 'designs' folder.
-- Do ```cd pes_ripple_counter```.
+- Do ```cd pes_tff```.
 - Here we create a config.json file.
+- To make the ```config.json``` file we type the following:
+
+```vim config.json```
+
+- in this vim text editor we type our design file.
+
+``` sh
+{
+    "DESIGN_NAME": "ring_counter",
+    "VERILOG_FILES": "dir::src/ring_counter.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10.0,
+    "DIE_AREA": "0 0 55 55",
+    "FP_SIZING": "absolute",
+    "FP_PDN_VPITCH": 25,
+    "FP_PDN_HPITCH": 25,
+    "FP_PDN_VOFFSET": 5,
+    "FP_PDN_HOFFSET": 5,
+    "DESIGN_IS_CORE": true
+}
+```
 - We make a new directory called 'src'.
 - Do ```cd src```
 - We add the following files to this directory.
