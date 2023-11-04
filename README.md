@@ -192,9 +192,10 @@ make test
 - Then type ```./flow.tcl -interactive```.
 - To prep the design type
 ```
-prep -design pes_ripple_counter
+prep -design pes_tff
 ```
 
+![WhatsApp Image 2023-11-04 at 11 26 16 AM](https://github.com/vaishbv/pes_tff/assets/79531808/3528cb38-f235-4c17-9419-6a6fcb731ae3)
 
 ### Synthesis
 - Type
@@ -202,9 +203,8 @@ prep -design pes_ripple_counter
 run_synthesis
 ```
 
-![WhatsApp Image 2023-11-04 at 10 53 20 AM](https://github.com/vaishbv/pes_tff/assets/79531808/a0fd04ec-3220-4e1a-8f43-b7ea135f555b)
 ![WhatsApp Image 2023-11-04 at 10 52 15 AM](https://github.com/vaishbv/pes_tff/assets/79531808/d6258573-8bff-41d2-8b0b-5aa7c975d802)
-
+![WhatsApp Image 2023-11-04 at 10 53 20 AM](https://github.com/vaishbv/pes_tff/assets/79531808/a0fd04ec-3220-4e1a-8f43-b7ea135f555b)
 
 **Physical Cells**
 ![WhatsApp Image 2023-11-04 at 10 53 54 AM](https://github.com/vaishbv/pes_tff/assets/79531808/c9440aa6-bf24-42cc-b088-c494db5ab845)
@@ -223,6 +223,8 @@ run_floorplan
 ```
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def pes_tff.floorplan.def &
 ```
+
+
 <img width="1037" alt="Screenshot 2023-11-04 at 12 03 31 PM" src="https://github.com/vaishbv/pes_tff/assets/79531808/f2e61d94-9ab6-478a-a771-14893b9c631c">
 
 ![WhatsApp Image 2023-11-04 at 10 44 31 AM](https://github.com/vaishbv/pes_tff/assets/79531808/076fac24-7c2e-4630-a040-900fc08f7551)
@@ -240,21 +242,38 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ```
 <img width="1319" alt="Screenshot 2023-11-04 at 12 01 58 PM" src="https://github.com/vaishbv/pes_tff/assets/79531808/7a8f5b15-50da-412d-acf0-6c779c7a43dc">
 
+![WhatsApp Image 2023-11-04 at 10 45 55 AM](https://github.com/vaishbv/pes_tff/assets/79531808/5804bd42-1929-4ae1-9010-842616da1745)
+
+
 ### CTS(Clock Tree Synthesis)
 - Now to run cts we type
 ```
 run_cts
 ```
+![WhatsApp Image 2023-11-04 at 10 56 15 AM](https://github.com/vaishbv/pes_tff/assets/79531808/41837eee-20c9-423e-afa2-43098bea1e5c)
+
+![WhatsApp Image 2023-11-04 at 10 57 10 AM](https://github.com/vaishbv/pes_tff/assets/79531808/059f52b2-e801-48c0-9e53-e364ea25421e)
 
 - The reports generated are given below
 
+![WhatsApp Image 2023-11-04 at 11 00 46 AM](https://github.com/vaishbv/pes_tff/assets/79531808/66abcc97-454f-48cc-8864-da1d151b0439)
+
+![WhatsApp Image 2023-11-04 at 11 01 14 AM](https://github.com/vaishbv/pes_tff/assets/79531808/927d1d52-c31e-41c2-8397-657a2805bee9)
 
 
 **Power Report**
 
+<img width="498" alt="Screenshot 2023-11-04 at 7 43 47 PM" src="https://github.com/vaishbv/pes_tff/assets/79531808/34c015fa-6544-4452-b1d1-6a3e1c153d00">
+
+
 **Skew Report**
 
+<img width="514" alt="Screenshot 2023-11-04 at 7 44 28 PM" src="https://github.com/vaishbv/pes_tff/assets/79531808/9a90ae66-4a45-41f4-b517-efadcae870f3">
+
 **Area Report**
+
+<img width="660" alt="Screenshot 2023-11-04 at 7 51 29 PM" src="https://github.com/vaishbv/pes_tff/assets/79531808/994e05e8-bef4-460f-b2f4-fc045c260fae">
+
 
 ### Routing
 - Now to run routing we type
@@ -264,19 +283,28 @@ run_routing
 
 - To view the design we type
 ```
-magic -T /home/aniruddhan/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_ripco.def &
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def pes_tff.def &
 ```
 
+<img width="1322" alt="Screenshot 2023-11-04 at 6 50 22 PM" src="https://github.com/vaishbv/pes_tff/assets/79531808/2e3497da-3e36-4fd8-8f8f-0a299e17c7f4">
+
+![WhatsApp Image 2023-11-04 at 10 47 34 AM](https://github.com/vaishbv/pes_tff/assets/79531808/f0a38b2a-8131-4e8b-a4ff-f6c67af58c40)
 
 **Congestion Report**
 
-**Power and Clock Skew Report**
+<img width="661" alt="Screenshot 2023-11-04 at 7 45 40 PM" src="https://github.com/vaishbv/pes_tff/assets/79531808/d33ccdf6-9a4e-4753-9df3-bfce4acb41fd">
+
+**Performance**
+
+<img width="630" alt="Screenshot 2023-11-04 at 7 26 26 PM" src="https://github.com/vaishbv/pes_tff/assets/79531808/3cd82b49-de72-4a5a-bb12-9297ba4fa205">
+
+Performance = 1/(clock period-slack) = 1/(24.73-18.60)ps = 163.13GHz
 
 **Summary Report and Area Report**
 
 **Statistics**
-- Area = 351.155 um2
-- Internal Power = 2.08e-06 W
-- Switching Power = 5.18e-07
-- Leakage Power = 8.24e-11
-- Total Power = 2.59e-06
+- Area = 4723.994 um^2
+- Internal Power = 1.49e-06 W
+- Switching Power = 2.51e-06 W
+- Leakage Power = 1.11e-10 W
+- Total Power = 4.00e-06 W
