@@ -195,7 +195,8 @@ make test
 prep -design pes_tff
 ```
 
-![WhatsApp Image 2023-11-04 at 11 26 16 AM](https://github.com/vaishbv/pes_tff/assets/79531808/3528cb38-f235-4c17-9419-6a6fcb731ae3)
+![WhatsApp Image 2023-11-04 at 10 38 18 PM](https://github.com/vaishbv/pes_tff/assets/79531808/10e8fbf3-82e8-4f75-b083-59564b79414a)
+
 
 ### Synthesis
 - Type
@@ -251,7 +252,8 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 run_cts
 ```
 
-![WhatsApp Image 2023-11-04 at 10 57 10 AM](https://github.com/vaishbv/pes_tff/assets/79531808/059f52b2-e801-48c0-9e53-e364ea25421e)
+![WhatsApp Image 2023-11-04 at 10 56 15 AM](https://github.com/vaishbv/pes_tff/assets/79531808/41837eee-20c9-423e-afa2-43098bea1e5c)
+
 
 - The reports generated are given below
 
@@ -280,7 +282,8 @@ run_cts
 run_routing
 ```
 
-![WhatsApp Image 2023-11-04 at 10 56 15 AM](https://github.com/vaishbv/pes_tff/assets/79531808/41837eee-20c9-423e-afa2-43098bea1e5c)
+![WhatsApp Image 2023-11-04 at 10 57 10 AM](https://github.com/vaishbv/pes_tff/assets/79531808/059f52b2-e801-48c0-9e53-e364ea25421e)
+
 
 - To view the design we type
 ```
